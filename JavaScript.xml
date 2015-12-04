@@ -126,7 +126,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name="app" value="var express = require('express');&#10;&#10;var app = express();&#10;app.get('/',function(req,res,next){&#10;  $END$    &#10;})&#10;&#10;app.listen(8000,function(req ,res){&#10;&#9;console.log('app is running  8000');&#10;})&#10;&#10;" toReformat="true" toShortenFQNames="true">
+  <template name="app" value="var express = require('express');&#10;&#10;var app = express();&#10;app.get('/',function(req,res,next){&#10;  res.send('hello word!');&#10;  $END$    &#10;})&#10;&#10;app.listen(8000,function(req ,res){&#10;&#9;console.log('app is running  8000');&#10;})&#10;&#10;" toReformat="true" toShortenFQNames="true">
     <context>
       <option name="HTML_TEXT" value="true" />
       <option name="HTML" value="true" />
@@ -152,5 +152,8 @@
       <option name="DART" value="true" />
       <option name="OTHER" value="true" />
     </context>
+  </template>
+  <template name="var" value="var a$END$ = '';" description="var declear" toReformat="false" toShortenFQNames="true">
+    <context />
   </template>
 </templateSet>
